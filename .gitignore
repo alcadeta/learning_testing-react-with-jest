@@ -6,6 +6,7 @@
 # Alican
 .idea/
 yarn.lock
+coverage/
 
 # User-specific files
 *.rsuser
