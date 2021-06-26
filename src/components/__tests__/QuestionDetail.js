@@ -1,6 +1,15 @@
-describe('The Question Detail Component', () => {
+import { mapStateToProps } from "../QuestionDetail";
 
-  it('should not regress', () => {
-    expect(40 + 2).toEqual(42);
+describe("The Question Detail Component", () => {
+  describe("The Container Element", () => {
+    describe("mapStateToProps", () => {
+      it("should map state to props correctly", () => {
+        const sampleQuestion = { question_id: 42, body: "Space is big" };
+        const appState = { questions: [sampleQuestion] };
+        const ownProps = { question_id: 42 };
+        const componentState = mapStateToProps(appState, ownProps);
+        expect(componentState).toEqual(sampleQuestion);
+      });
+    });
   });
 });
