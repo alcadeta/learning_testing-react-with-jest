@@ -1,7 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import QuestionList from './components/QuestionList'
 import QuestionDetail from './components/QuestionDetail'
-import { connect } from 'react-redux';
+import NotificationsViewer from "./components/NotificationsViewer";
 
 import {
     Route,
@@ -18,6 +19,10 @@ const AppDisplay =  ()=>(
             <Link to={`/`}>
                 <h1>Isomorphic React</h1>
             </Link>
+        </div>
+
+        <div>
+            <NotificationsViewer />
         </div>
 
         {/*Specify a route for the main page which renders when the path is empty*/}
