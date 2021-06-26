@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer';
 describe("The Tags List", () => {
     it("renders as expected", () => {
         const tree = renderer
-            .create(<TagsList tags={["html", "css", "javascript"]} />)
+            .create(<TagsList tags={["C#", "ASP.NET WebAPI", "React"]} />)
             .toJSON();
 
         console.log(tree);

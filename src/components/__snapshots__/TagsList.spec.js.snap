@@ -3,13 +3,13 @@
 exports[`The Tags List renders as expected 1`] = `
 <div>
   <code>
-    html
+    C#
   </code>
   <code>
-    css
+    ASP.NET WebAPI
   </code>
   <code>
-    javascript
+    React
   </code>
 </div>
 `;
